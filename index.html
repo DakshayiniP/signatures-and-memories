@@ -11,12 +11,12 @@
 </head>
 <body>
 <div class="sparkles" aria-hidden="true">✦　·　✧　　·　✦　·　✧　　✦</div>
-
 <header class="hero">
   <div class="eyebrow">WALMART • 2020 — 2026</div>
-  <h1>Before I go,<br><span>leave me a little something. 💌</span></h1>
-  <p class="intro">Six years. Countless releases, incidents, GIFs, CRQs, laughs and memories.<br>
-  I’d love to take a few of your words with me into my next chapter.</p>
+  <h1>I'm off to my next chapter</h1>
+  <div class="name-mark">Dakshayini</div>
+  <p class="intro">Before I go, leave me a little something to remember.<br>
+  Six years. Countless releases, incidents, GIFs, CRQs, laughs and memories.</p>
   <button class="primary" onclick="openModal()">✍️ Leave an autograph</button>
   <div class="stats">
     <div><strong id="messageCount">0</strong><span>autographs</span></div>
@@ -24,7 +24,6 @@
     <div><strong>2026</strong><span>new chapter</span></div>
   </div>
 </header>
-
 <main>
   <section class="wall-head">
     <div>
@@ -40,17 +39,15 @@
   </section>
   <section id="wall" class="wall"></section>
 </main>
-
 <footer>
-  <div class="footer-note">Made with gratitude, a little nostalgia & a lot of ❤️</div>
+  <div class="footer-note">Made with gratitude, a little nostalgia &amp; a lot of <span class="heart-symbol" aria-hidden="true">♥</span></div>
   <div>— Dakshayini</div>
 </footer>
-
 <div class="modal-backdrop" id="modal" aria-hidden="true">
   <div class="modal">
     <button class="close" onclick="closeModal()" aria-label="Close">×</button>
     <div class="eyebrow">ADD YOUR AUTOGRAPH</div>
-    <h2>Leave something future-me can read. 💌</h2>
+    <h2>Leave something future-me can read. <span class="heart-symbol" aria-hidden="true">♥</span></h2>
     <form id="autographForm">
       <label>Your name <span>*</span><input id="name" required maxlength="60" placeholder="e.g. Priya"></label>
       <label>Team / role <small>optional</small><input id="team" maxlength="80" placeholder="e.g. GIF / Engineering"></label>
@@ -69,7 +66,6 @@
     </form>
   </div>
 </div>
-
 <script src="script.js"></script>
 </body>
 </html>
