@@ -13,10 +13,10 @@
 <div class="sparkles" aria-hidden="true">✦　·　✧　　·　✦　·　✧　　✦</div>
 <header class="hero">
   <div class="eyebrow">WALMART • 2020 — 2026</div>
-  <h1>I'm off to my next chapter</h1>
-  <div class="name-mark">Dakshayini</div>
-  <p class="intro">Before I go, leave me a little something to remember.<br>
-  Six years. Countless releases, incidents, GIFs, CRQs, laughs and memories.</p>
+  <h1>I'm off to my<br><span>next chapter.</span></h1>
+  <p class="intro">Six years. Countless releases, incidents, GIFs, CRQs, laughs and memories.<br>
+  Before I go, leave me a little something to remember.</p>
+  <div style="font-family:'Playfair Display',serif;font-size:24px;margin:-10px 0 28px;color:#8b6ee8;">Dakshayini</div>
   <button class="primary" onclick="openModal()">✍️ Leave an autograph</button>
   <div class="stats">
     <div><strong id="messageCount">0</strong><span>autographs</span></div>
@@ -40,17 +40,17 @@
   <section id="wall" class="wall"></section>
 </main>
 <footer>
-  <div class="footer-note">Made with gratitude, a little nostalgia &amp; a lot of <span class="heart-symbol" aria-hidden="true">♥</span></div>
+  <div class="footer-note">Made with gratitude, a little nostalgia & a lot of <span style="color:#e44c90;">♥</span></div>
   <div>— Dakshayini</div>
 </footer>
 <div class="modal-backdrop" id="modal" aria-hidden="true">
   <div class="modal">
     <button class="close" onclick="closeModal()" aria-label="Close">×</button>
     <div class="eyebrow">ADD YOUR AUTOGRAPH</div>
-    <h2>Leave something future-me can read. <span class="heart-symbol" aria-hidden="true">♥</span></h2>
+    <h2>Leave something future-me can read. <span style="color:#e44c90;">♥</span></h2>
     <form id="autographForm">
       <label>Your name <span>*</span><input id="name" required maxlength="60" placeholder="e.g. Priya"></label>
-      <label>Team / role <small>optional</small><input id="team" maxlength="80" placeholder="e.g. GIF / Engineering"></label>
+      <label>Team / role <small>optional</small><input id="team" maxlength="80" placeholder="e.g. Engineering"></label>
       <label>Your message <span>*</span><textarea id="message" required maxlength="500" rows="5" placeholder="A memory, inside joke, good wish, advice... anything!"></textarea></label>
       <label>Pick your vibe
         <select id="vibe">
