@@ -30,7 +30,7 @@ document.getElementById("autographForm").addEventListener("submit", async e=>{
  e.preventDefault();
  const status=document.getElementById("status");
  const file=document.getElementById("photo").files[0];
- if(file && file.size>2*1024*1024){status.textContent="Please choose an image smaller than 2 MB.";return;}
+ if(file && file.size>5*1024*1024){status.textContent="Please choose an image smaller than 5 MB.";return;}
  status.textContent="Adding your autograph… ✨";
  const finish=photoData=>{
    const item={name:document.getElementById("name").value.trim(),team:document.getElementById("team").value.trim(),message:document.getElementById("message").value.trim(),vibe:document.getElementById("vibe").value,photo:photoData||""};
