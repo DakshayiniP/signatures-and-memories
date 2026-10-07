@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dakshayini's Walmart Memory Wall</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sparkles" aria-hidden="true">✦　·　✧　　·　✦　·　✧　　✦</div>
+
+<header class="hero">
+  <div class="eyebrow">WALMART • 2020 — 2026</div>
+  <h1>Before I go,<br><span>leave me a little something. 💌</span></h1>
+  <p class="intro">Six years. Countless releases, incidents, GIFs, CRQs, laughs and memories.<br>
+  I’d love to take a few of your words with me into my next chapter.</p>
+  <button class="primary" onclick="openModal()">✍️ Leave an autograph</button>
+  <div class="stats">
+    <div><strong id="messageCount">0</strong><span>autographs</span></div>
+    <div><strong id="photoCount">0</strong><span>photos</span></div>
+    <div><strong>2026</strong><span>new chapter</span></div>
+  </div>
+</header>
+
+<main>
+  <section class="wall-head">
+    <div>
+      <div class="eyebrow">THE MEMORY WALL</div>
+      <h2>Signed by the people<br>who were part of the journey.</h2>
+    </div>
+    <div class="filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="heartfelt">❤️ Heartfelt</button>
+      <button class="filter" data-filter="funny">😂 Funny</button>
+      <button class="filter" data-filter="advice">🚀 Advice</button>
+    </div>
+  </section>
+  <section id="wall" class="wall"></section>
+</main>
+
+<footer>
+  <div class="footer-note">Made with gratitude, a little nostalgia & a lot of ❤️</div>
+  <div>— Dakshayini</div>
+</footer>
+
+<div class="modal-backdrop" id="modal" aria-hidden="true">
+  <div class="modal">
+    <button class="close" onclick="closeModal()" aria-label="Close">×</button>
+    <div class="eyebrow">ADD YOUR AUTOGRAPH</div>
+    <h2>Leave something future-me can read. 💌</h2>
+    <form id="autographForm">
+      <label>Your name <span>*</span><input id="name" required maxlength="60" placeholder="e.g. Priya"></label>
+      <label>Team / role <small>optional</small><input id="team" maxlength="80" placeholder="e.g. GIF / Engineering"></label>
+      <label>Your message <span>*</span><textarea id="message" required maxlength="500" rows="5" placeholder="A memory, inside joke, good wish, advice... anything!"></textarea></label>
+      <label>Pick your vibe
+        <select id="vibe">
+          <option value="heartfelt">❤️ Heartfelt</option>
+          <option value="funny">😂 Funny</option>
+          <option value="advice">🚀 Advice</option>
+        </select>
+      </label>
+      <label>Photo <small>optional · JPG/PNG, max 2 MB</small><input id="photo" type="file" accept="image/jpeg,image/png"></label>
+      <button class="primary full" type="submit">Add my autograph ✨</button>
+      <p class="fineprint">Your message will appear on the memory wall. Please only upload photos you’re comfortable sharing with everyone who has the link.</p>
+      <p id="status" class="status"></p>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
